@@ -1,7 +1,11 @@
 $mkdir -p .github/workflows
+
 $cd .github/workflows
 $nano CI.yml
-/*name: CMake
+/*
+
+
+name: CMake
 
 on:
  push:
@@ -47,7 +51,3 @@ jobs:
 
   - name: Build HelloWorld
     run: cmake --build /klich26/workspace/projects/lab04/hello_world_application/build
-*\
-$git add .
-$git commit -m "added CI.yml"
-$git push origin main
